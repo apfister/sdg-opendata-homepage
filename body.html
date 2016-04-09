@@ -1,158 +1,195 @@
 <div class="jumbotron top-section">
   <div class="container">
-    <h2>Hello, world!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat lectus tellus. In in scelerisque turpis. Sed bibendum velit at odio cursus maximus. Aliquam a interdum ex, at lacinia purus. Etiam id est ut eros auctor convallis in vitae odio. Phasellus ullamcorper rhoncus vestibulum. Ut porttitor sapien eget nisl molestie, eu venenatis nibh tempor. Fusce id lorem volutpat, congue nibh id, sollicitudin nisl. Praesent eros ipsum, fermentum at ante varius, viverra maximus tortor. Praesent imperdiet tempus quam, laoreet blandit risus dapibus pulvinar. Aliquam imperdiet sed metus vel viverra.</p>
-  </div>
-</div>
-<div class="row search-section">
-  <div class="container">
-    <h3 class="contentTitle text-center">Find Data</h3>
     <div id="searchWidget">
       <form method="get" action="/datasets" accept-charset="UTF-8">
         <div class="form-group has-feedback"> 
-          <input id="gsearch" class="form-control" type="search" value="" placeholder="Search" name="q" autocomplete="off">
+          <input id="gsearch" class="form-control" type="search" value="" placeholder="Search the SDGs" name="q" autocomplete="off">
           <span id="searchButton" class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span> 
           <span id="inputSearch" class="sr-only">(search)</span> 
         </div>
 
       </form>
     </div>
-    <button type="button" id="explore-more" class="btn btn-primary btn-responsive" style="display:block; margin: 0 auto;" onclick="window.location='http://the.sdgs.opendata.arcgis.com/datasets?q=&amp;sort_by=relevance';"> Explore All Data</button>
+    <button type="button" id="explore-more" class="btn-sdg btn-info-sdg btn-responsive" style="display:block; margin: 0 auto;" onclick="window.location='http://the.sdgs.opendata.arcgis.com/datasets?q=&amp;sort_by=relevance';"> Explore All Data</button>
   </div>
 </div>
 <div class="container-fluid sdg-thumbs">
   <div class="container">
     <h2>Explore the Goals</h2>
-    <hr class="sdg-thumbs-sep">
+    <hr class="sdgs-sep">
     <div class="row">
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG1&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_01.png" class="thumbnail sdg-thumb">
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG2&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_02.png" class="thumbnail sdg-thumb">
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG3&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_03.png" class="thumbnail sdg-thumb">
-      </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG4&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_04.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG5&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_05.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG6&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_06.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG7&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_07.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG8&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_08.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG9&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_09.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG10&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_10.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG11&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_11.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG12&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_12.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG13&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_13.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG14&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_14.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG15&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_15.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG16&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_16.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
-    <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
-      <a data-pjax="true"  href="/datasets?keyword=SDG17&amp;sort_by=relevance">
-        <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_17.png" class="thumbnail sdg-thumb">
-     </a>
-    </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG1&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_01.png" class="thumbnail sdg-thumb">
+        </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG2&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_02.png" class="thumbnail sdg-thumb">
+        </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG3&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_03.png" class="thumbnail sdg-thumb">
+        </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG4&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_04.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG5&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_05.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG6&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_06.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG7&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_07.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG8&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_08.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG9&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_09.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG10&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_10.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG11&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_11.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG12&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_12.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG13&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_13.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG14&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_14.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG15&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_15.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG16&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_16.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-xs-6 hvr-grow">
+        <a data-pjax="true"  href="/datasets?keyword=SDG17&amp;sort_by=relevance">
+          <img src="https://s3.amazonaws.com/sdg-images/TGG_Icon_Color_17.png" class="thumbnail sdg-thumb">
+       </a>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid apps-section">
-  <h2>Apps</h2>
-  <hr>
-  <ul class="cards-list">
-    <li>
-      <article class="card"><img src="//sdgs.maps.arcgis.com/sharing/rest/content/items/ebe6158e26ce4723a168836391678d46/info/thumbnail/ago_downloaded.png" alt="Card Thumbnail">
-        <div class="card-options" onclick="window.open('https://esri.github.io/sdg-dash')">
-          <button class="open-btn">View</button>
-        </div>
-        <hr>
-        <h6>SDG Dashboard</h6>
-        <ul class="card-info">
-          <p>Explore the Goals using a Dashboard-style Web Application</p>
+<div class="container-fluid narratives">
+  <div class="container">
+    <h2>Narratives</h2>
+    <hr class="narratives-sep">
+    <div class="row">
+      <div class="col-xs-8">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat lectus tellus. In in scelerisque turpis. Sed bibendum velit at odio cursus maximus. Aliquam a interdum ex, at lacinia purus. Etiam id est ut eros auctor convallis in vitae odio. Phasellus ullamcorper rhoncus vestibulum. Ut porttitor sapien eget nisl molestie, eu venenatis nibh tempor.</h3>
+        <h3 class="text-center"><a href="http://storymaps.arcgis.com/en/" target="_blank">Learn More</a></h3>
+      </div>
+      <div class="col-xs-4">
+        <ul class="homepage-cards-list">
+          <li>
+            <article class="homepage-card"><img src="//sdgs.maps.arcgis.com/sharing/rest/content/items/4fa357dd08e94320a19733c1823af066/info/thumbnail/ago_downloaded.png" alt="Card Thumbnail">
+              <div class="homepage-card-options" onclick="window.open('http://sdgs.maps.arcgis.com/apps/MapJournal/?appid=320279caa7f549678ba428f24a9f12ec')">
+                <button class="open-btn">View</button>
+              </div>
+              <hr>
+              <h6>An SDG Story Map</h6>
+              <ul class="homepage-card-info">
+                <p>A rich and engaging walk-through of the SDGs.</p>
+              </ul>
+            </article>
+          </li>
         </ul>
-      </article>
-    </li>
-    <li>
-      <article class="card"><img src="//assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Card Thumbnail">
-        <div class="card-options" onclick="window.open('https://www.github.com/Esri/sdg-api')">
-          <button class="open-btn">View</button>
-        </div>
-        <hr>
-        <h6>Metadata API</h6>
-        <ul class="card-info">
-          <p>An API to retrieve information and metadata on the Sustainable Development Goals</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid apis">
+  <div class="container">
+    <h2>Open APIs</h2>
+    <hr class="apis-sep">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="homepage-cards-list">
+          <li>
+            <article class="homepage-card api-card"><img src="//assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Card Thumbnail">
+              <div class="homepage-card-options" onclick="window.open('https://www.github.com/Esri/sdg-api')">
+                <button class="open-btn">View</button>
+              </div>
+              <hr>
+              <h6>Metadata API</h6>
+              <ul class="homepage-card-info">
+                <p>An API to retrieve information and metadata on the Sustainable Development Goals</p>
+              </ul>
+            </article>
+          </li>
         </ul>
-      </article>
-    </li>
-    <li>
-      <article class="card"><img src="//sdgs.maps.arcgis.com/sharing/rest/content/items/4fa357dd08e94320a19733c1823af066/info/thumbnail/ago_downloaded.png" alt="Card Thumbnail">
-        <div class="card-options" onclick="window.open('http://sdgs.maps.arcgis.com/apps/MapJournal/?appid=320279caa7f549678ba428f24a9f12ec')">
-          <button class="open-btn">View</button>
-        </div>
-        <hr>
-        <h6>An SDG Story Map</h6>
-        <ul class="card-info">
-          <p>A rich and engaging walk-through of the SDGs.</p>
+      </div>
+      <div class="col-xs-8">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat lectus tellus. In in scelerisque turpis. Sed bibendum velit at odio cursus maximus. Aliquam a interdum ex, at lacinia purus. Etiam id est ut eros auctor convallis in vitae odio. Phasellus ullamcorper rhoncus vestibulum. Ut porttitor sapien eget nisl molestie, eu venenatis nibh tempor.</h3>
+        <h3 class="text-center"><a href="http://www.esri.com/software/open" target="_blank">Our Open Vision</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid apps">
+  <div class="container">
+    <h2>Applications</h2>
+    <hr class="apps-sep">
+    <div class="row">
+      <div class="col-xs-8">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat lectus tellus. In in scelerisque turpis. Sed bibendum velit at odio cursus maximus. Aliquam a interdum ex, at lacinia purus. Etiam id est ut eros auctor convallis in vitae odio. Phasellus ullamcorper rhoncus vestibulum. Ut porttitor sapien eget nisl molestie, eu venenatis nibh tempor.</h3>
+        <h3 class="text-center"><a href="http://www.esri.com/software/configurable-apps" target="_blank">Learn More</a></h3>
+      </div>
+      <div class="col-xs-4">
+        <ul class="homepage-cards-list">
+          <li>
+            <article class="homepage-card"><img src="//sdgs.maps.arcgis.com/sharing/rest/content/items/ebe6158e26ce4723a168836391678d46/info/thumbnail/ago_downloaded.png" alt="Card Thumbnail">
+              <div class="homepage-card-options" onclick="window.open('https://esri.github.io/sdg-dash')">
+                <button class="open-btn">View</button>
+              </div>
+              <hr>
+              <h6>SDG Dashboard</h6>
+              <ul class="homepage-card-info">
+                <p>Explore the Goals using a Dashboard-style Web Application</p>
+              </ul>
+            </article>
+          </li>
         </ul>
-      </article>
-    </li>
-  </ul>
+      </div>
+    </div>
+  </div>
 </div>

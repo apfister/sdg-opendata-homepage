@@ -1,44 +1,47 @@
 
 body.home #title-bar-region {
-    display: none;
+  display: none;
 }
 body #page-content > .container {
-    width: 100%;
+  width: 100%;
 }
 
 .top-section {
-  background-image: url('http://www.esri.com/~/media/esricom/banners/industries/sustainable-development-main.jpg');
-  background-repeat: repeat-x;
-  background-size: cover;
-  height: 360px;
+  background: #dcefec url('https://s3.amazonaws.com/sdg-opendata-homepage/open-sdg-bg-web-cropped3-goals.jpg');
+  height: 730px;
   border-radius: 0 !important;
   margin: 0;
+  background-size: 1380px;
+  background-position-y: -50px;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 .top-section .container {
-  margin-top: -40px;
+  margin-top: 265px;
 }
 .top-section p {
   font-size: 16px;
 }
-.search-section {
-  height: 220px;
-  text-align: center;
-  padding: 0 15px;
-  background-color: #fff;
-}
-.search-section #gsearch {
-  width: 600px;
+.top-section #gsearch {
+  width: 400px;
   position: relative;
   left: 50%;
-  margin-left: -300px;
+  margin-left: -185px;
+  border-radius: 0;
+  height: 40px;
+  font-size: 16px;
 }
-.search-section #searchButton{
-  /*position: relative;*/
+
+.top-section #searchButton{
   left: 50%;
-  margin-left: 250px;
+  margin-left: 175px;
+  margin-top: 3px;
+  font-size: 15px;
 }
 .sdg-thumbs {
   background-color: #f6f6f6;
+  padding-bottom: 30px;
+  box-shadow: 0 0 5px #555;
 }
 .sdg-thumbs .container {
   padding-left: 30px;
@@ -48,7 +51,7 @@ body #page-content > .container {
   margin-left: 2px;
   font-weight: 300;
 }
-.sdg-thumbs-sep {
+.sdgs-sep {
   width: 120px;
   border: 2px solid #ffc94e;
   text-align: left;
@@ -64,156 +67,6 @@ body #page-content > .container {
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
-.apps-section {
-  /*height: 400px;*/
-  /*background-image: url('//www.esri.com/~/media/B3403A2428984BC284FF17AFC65EA656.jpg');*/
-  /*background-repeat: repeat-x;*/
-  background-color: #E9F5F8;
-  min-height: 450px;
-}
-
-.apps-section .cards-list {
-  margin: 0;
-  padding: 0; }
-  .cards-list > li {
-    float: left;
-    padding: 0 13px; }
-  .cards-list li {
-    list-style: none; }
-
-.apps-section .card {
-  position: relative;
-  display: inline-block;
-  padding: 20px;
-  margin-bottom: 40px;
-  background-color: white;
-  border: 1px solid #cccccc;
-  text-align: center;
-  width: 255px;
-  height: 296px; }
-  .card img {
-    height: 133px;
-    max-width: 200px; }
-  .card hr {
-    margin: 1.7rem -1.7rem;
-    border-top: 1px solid #e7e7e7; }
-  .card h6 {
-    font-weight: 400;
-    color: #4c4c4c;
-    display: block;
-    display: -webkit-box;
-    height: 2rem;
-    line-height: 1.55rem;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis; 
-    font-size: 18px;
-  }
-
-.apps-section .card-info {
-  left: 0;
-  padding: 0 2px;
-  margin: 0;
-  width: 100%;
-  line-height: 1.7rem;
-  color: #6e6e6e;
-  font-size: 1.3rem; }
-  .card-info li {
-    display: inline; }
-    .card-info li:first-of-type:after {
-      content: " • "; }
-
-.apps-section .card-options {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: white;
-  opacity: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 172px, transparent 173px, rgba(255, 255, 255, 0) 100%);
-  transition: opacity ease-in-out 400ms; }
-  .card-options .glyphicon {
-    visibility: hidden;
-    right: -30px;
-    margin-left: 10px;
-    transition: 600ms; }
-    .card-options .glyphicon:nth-child(2) {
-      transition: 900ms; }
-    .card-options .glyphicon:nth-child(3) {
-      transition: 1200ms; }
-    .card-options .glyphicon:nth-child(4) {
-      transition: 1500ms; }
-  .card-options:hover, .card-options:active, .card-options:focus {
-    opacity: 1;
-    cursor: pointer;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
-    .card-options:hover > button, .card-options:active > button, .card-options:focus > button {
-      transform: translateY(30px);
-      visibility: visible; }
-    .card-options:hover .glyphicon, .card-options:active .glyphicon, .card-options:focus .glyphicon {
-      transform: translateX(-30px);
-      visibility: visible; }
-    .card-options:hover li, .card-options:active li, .card-options:focus li {
-      visibility: visible; }
-  .card-options ul {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    color: white;
-    font-size: rem(17px); }
-    .card-options ul li {
-      visibility: hidden;
-      width: 1.7rem;
-      float: right;
-      margin-right: -.12rem;
-      cursor: pointer;
-      visibility: hidden; }
-  .card-options button {
-    background: rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    padding: 10px;
-    margin-top: 2.4rem;
-    text-decoration: none;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    transition: 300ms;
-    visibility: hidden;
-    font-size: 1.5rem;
-    line-height: 1.6rem; 
-  }
-    .card-options button:hover, 
-    .card-options button:active, 
-    .card-options button:focus {
-      text-decoration: none;
-      border: 1px solid white;
-      color: white;
-      background: rgba(255, 255, 255, 0.3); 
-    }
-      .card-options input {
-    background: rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    padding: 10px;
-    margin-top: 2.4rem;
-    text-decoration: none;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    transition: 300ms;
-    visibility: hidden;
-    font-size: 1.5rem;
-    line-height: 1.6rem; 
-  }
-    .card-options input:hover, 
-    .card-options input:active, 
-    .card-options input:focus {
-      text-decoration: none;
-      border: 1px solid white;
-      color: white;
-      background: rgba(255, 255, 255, 0.3); 
-    }
 
 .hvr-grow {
   display: inline-block;
@@ -232,4 +85,352 @@ body #page-content > .container {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.apps-section {
+  /*height: 400px;*/
+  /*background-image: url('//www.esri.com/~/media/B3403A2428984BC284FF17AFC65EA656.jpg');*/
+  /*background-repeat: repeat-x;*/
+  background-color: #E9F5F8;
+  min-height: 450px;
+}
+
+.narratives {
+  height: 450px;
+}
+.narratives-sep {
+  width: 120px;
+  border: 2px solid #6bbf51;
+  text-align: left;
+  margin-left: 4px;
+}
+.narratives .container h2 {
+  margin-left: 2px;
+  font-weight: 300;
+}
+.narratives h3 {
+  font-weight: 300;
 }    
+
+.apis {
+  height: 500px;
+  background-color: #E9F5F8;
+  box-shadow: 0 0 5px #555;
+}
+.apis-sep {
+  width: 120px;
+  border: 2px solid #25b5cd;
+  text-align: left;
+  margin-left: 4px;
+}
+
+.apis .container h2 {
+  margin-left: 2px;
+  font-weight: 300;
+}
+.apis h3 {
+  font-weight: 300;
+}
+.api-card {
+  top: 10px !important;
+}
+
+.apps {
+  height: 450px;
+}
+.apps-sep {
+  width: 120px;
+  border: 2px solid #6bbf51;
+  text-align: left;
+  margin-left: 4px;
+}
+.apps .container h2 {
+  margin-left: 2px;
+  font-weight: 300;
+}
+.apps h3 {
+  font-weight: 300;
+} 
+
+
+/* cards */
+.homepage-cards-list {
+  margin: 0;
+  padding: 0; 
+}
+.homepage-cards-list > li {
+  float: left;
+  padding: 0 13px; 
+}
+.homepage-cards-list li {
+  list-style: none; 
+}
+
+.homepage-card {
+  /*position: relative;*/
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  text-align: center;
+  /*width: 255px;*/
+  /*height: 296px; */
+
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  top: -50px;
+}
+.homepage-card img {
+  height: 133px;
+  max-width: 200px; 
+}
+.homepage-card hr {
+  margin: 1.7rem -1.7rem;
+  border-top: 1px solid #e7e7e7; 
+}
+.homepage-card h6 {
+  font-weight: 400;
+  color: #4c4c4c;
+  display: block;
+  display: -webkit-box;
+  height: 2rem;
+  line-height: 1.55rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 18px;
+}
+
+.homepage-card-info {
+  left: 0;
+  padding: 0 2px;
+  margin: 0;
+  width: 100%;
+  line-height: 1.7rem;
+  color: #6e6e6e;
+  font-size: 1.3rem; 
+}
+.homepage-card-info li {
+  display: inline; 
+}
+.homepage-card-info li:first-of-type:after {
+  content: " • "; 
+}
+.homepage-card-options {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 172px, transparent 173px, rgba(255, 255, 255, 0) 100%);
+  transition: opacity ease-in-out 400ms; 
+}
+.homepage-card-options .glyphicon {
+  visibility: hidden;
+  right: -30px;
+  margin-left: 10px;
+  transition: 600ms; 
+}
+.homepage-card-options .glyphicon:nth-child(2) {
+  transition: 900ms; 
+}
+.homepage-card-options .glyphicon:nth-child(3) {
+  transition: 1200ms; 
+}
+.homepage-card-options .glyphicon:nth-child(4) {
+  transition: 1500ms; 
+}
+.homepage-card-options:hover, 
+.homepage-card-options:active, 
+.homepage-card-options:focus {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); 
+}
+.homepage-card-options:hover > button, 
+.homepage-card-options:active > button, 
+.homepage-card-options:focus > button {
+  transform: translateY(30px);
+  visibility: visible; 
+}
+.homepage-card-options:hover .glyphicon, 
+.homepage-card-options:active .glyphicon, 
+.homepage-card-options:focus .glyphicon {
+  transform: translateX(-30px);
+  visibility: visible; 
+}
+.homepage-card-options:hover li, 
+.homepage-card-options:active li, 
+.homepage-card-options:focus li {
+  visibility: visible; 
+}
+.homepage-card-options ul {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: white;
+  font-size: rem(17px); 
+}
+.homepage-card-options ul li {
+  visibility: hidden;
+  width: 1.7rem;
+  float: right;
+  margin-right: -.12rem;
+  cursor: pointer;
+  visibility: hidden; 
+}
+.homepage-card-options button {
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  padding: 10px;
+  margin-top: 2.4rem;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 300ms;
+  visibility: hidden;
+  font-size: 1.5rem;
+  line-height: 1.6rem; 
+}
+.homepage-card-options button:hover, 
+.homepage-card-options button:active, 
+.homepage-card-options button:focus {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0.3); 
+}
+.homepage-card-options input {
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  padding: 10px;
+  margin-top: 2.4rem;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 300ms;
+  visibility: hidden;
+  font-size: 1.5rem;
+  line-height: 1.6rem; 
+}
+.homepage-card-options input:hover, 
+.homepage-card-options input:active, 
+.homepage-card-options input:focus {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+.btn-sdg {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .btn:focus,
+  .btn.focus,
+  .btn:active:focus,
+  .btn:active.focus,
+  .btn.active:focus,
+  .btn.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .btn:hover,
+  .btn:focus,
+  .btn.focus {
+    color: #0079c1;
+    text-decoration: none; }
+  .btn:active,
+  .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  .btn.disabled,
+  .btn[disabled],
+  fieldset[disabled] .btn {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+.btn-info-sdg {
+  color: #4c4c4c;
+  background-color: #bcdaed;
+  border-color: #3b8fc4; }
+  .btn-info-sdg:focus,
+  .btn-info-sdg.focus {
+    color: #4c4c4c;
+    background-color: #94c4e2;
+    border-color: #1d4762; }
+  .btn-info-sdg:hover {
+    color: #4c4c4c;
+    background-color: #94c4e2;
+    border-color: #2d6d95; }
+  .btn-info-sdg:active,
+  .btn-info-sdg.active,
+  .open > .btn-info-sdg.dropdown-toggle {
+    color: #4c4c4c;
+    background-color: #94c4e2;
+    border-color: #2d6d95; }
+    .btn-info-sdg:active:hover,
+    .btn-info-sdg:active:focus,
+    .btn-info-sdg:active.focus,
+    .btn-info-sdg.active:hover,
+    .btn-info-sdg.active:focus,
+    .btn-info-sdg.active.focus,
+    .open > .btn-info-sdg.dropdown-toggle:hover,
+    .open > .btn-info-sdg.dropdown-toggle:focus,
+    .open > .btn-info-sdg.dropdown-toggle.focus {
+      color: #4c4c4c;
+      background-color: #78b4db;
+      border-color: #1d4762; }
+  .btn-info-sdg:active,
+  .btn-info-sdg.active,
+  .open > .btn-info-sdg.dropdown-toggle {
+    background-image: none; }
+  .btn-info-sdg.disabled,
+  .btn-info-sdg.disabled:hover,
+  .btn-info-sdg.disabled:focus,
+  .btn-info-sdg.disabled.focus,
+  .btn-info-sdg.disabled:active,
+  .btn-info-sdg.disabled.active,
+  .btn-info-sdg[disabled],
+  .btn-info-sdg[disabled]:hover,
+  .btn-info-sdg[disabled]:focus,
+  .btn-info-sdg[disabled].focus,
+  .btn-info-sdg[disabled]:active,
+  .btn-info-sdg[disabled].active,
+  fieldset[disabled] .btn-info-sdg,
+  fieldset[disabled] .btn-info-sdg:hover,
+  fieldset[disabled] .btn-info-sdg:focus,
+  fieldset[disabled] .btn-info-sdg.focus,
+  fieldset[disabled] .btn-info-sdg:active,
+  fieldset[disabled] .btn-info-sdg.active {
+    background-color: #bcdaed;
+    border-color: #3b8fc4; }
+  .btn-info-sdg .badge {
+    color: #bcdaed;
+    background-color: #4c4c4c; }
