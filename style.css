@@ -8,7 +8,7 @@ body #page-content > .container {
 
 .top-section {
   background: #dcefec url('https://s3.amazonaws.com/sdg-opendata-homepage/open-sdg-bg-web-cropped3-goals.jpg');
-  height: 730px;
+  height: 750px;
   border-radius: 0 !important;
   margin: 0;
   background-size: 1380px;
@@ -446,7 +446,8 @@ body #page-content > .container {
 /* ipad or tablet */
 @media only screen and (max-width: 1024px) {
   .top-section {
-    background-size: 1030px;
+    background-size: 1000px;
+    background-position-y: -35px;
     height: 535px;
   }
   .top-section .container {
@@ -482,6 +483,9 @@ body #page-content > .container {
   }
   .col-sm-4 {
     width: 33.33333%;
+  }
+  .jumbotron {
+    padding: 55px 0;
   }
 }
 
